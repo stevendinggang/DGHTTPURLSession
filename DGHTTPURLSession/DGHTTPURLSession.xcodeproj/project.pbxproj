@@ -16,6 +16,8 @@
 		B302FF7C1D47B40A005074BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B302FF7A1D47B40A005074BB /* LaunchScreen.storyboard */; };
 		B302FF871D47B40A005074BB /* DGHTTPURLSessionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B302FF861D47B40A005074BB /* DGHTTPURLSessionTests.m */; };
 		B302FF921D47B40B005074BB /* DGHTTPURLSessionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B302FF911D47B40B005074BB /* DGHTTPURLSessionUITests.m */; };
+		B302FFA81D47C3C8005074BB /* DGHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B302FFA71D47C3C8005074BB /* DGHTTPManager.m */; };
+		B302FFAD1D47D4F9005074BB /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B302FFAC1D47D4F9005074BB /* APIManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +44,8 @@
 		B302FF6D1D47B40A005074BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B302FF6F1D47B40A005074BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B302FF701D47B40A005074BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B302FF721D47B40A005074BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B302FF731D47B40A005074BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B302FF721D47B40A005074BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
+		B302FF731D47B40A005074BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
 		B302FF761D47B40A005074BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B302FF781D47B40A005074BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B302FF7B1D47B40A005074BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,10 @@
 		B302FF8D1D47B40B005074BB /* DGHTTPURLSessionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGHTTPURLSessionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B302FF911D47B40B005074BB /* DGHTTPURLSessionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGHTTPURLSessionUITests.m; sourceTree = "<group>"; };
 		B302FF931D47B40B005074BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B302FFA61D47C3C8005074BB /* DGHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGHTTPManager.h; sourceTree = "<group>"; };
+		B302FFA71D47C3C8005074BB /* DGHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGHTTPManager.m; sourceTree = "<group>"; };
+		B302FFAB1D47D4F9005074BB /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		B302FFAC1D47D4F9005074BB /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		C5F4B668BDDE960776E7AFCC /* Pods-DGHTTPURLSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGHTTPURLSession.release.xcconfig"; path = "Pods/Target Support Files/Pods-DGHTTPURLSession/Pods-DGHTTPURLSession.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,10 +114,11 @@
 		B302FF6B1D47B40A005074BB /* DGHTTPURLSession */ = {
 			isa = PBXGroup;
 			children = (
+				B302FFA51D47BD45005074BB /* Net */,
+				B302FFA01D47BC2B005074BB /* Class */,
+				B302FFA41D47BC2B005074BB /* Gategories */,
 				B302FF6F1D47B40A005074BB /* AppDelegate.h */,
 				B302FF701D47B40A005074BB /* AppDelegate.m */,
-				B302FF721D47B40A005074BB /* ViewController.h */,
-				B302FF731D47B40A005074BB /* ViewController.m */,
 				B302FF751D47B40A005074BB /* Main.storyboard */,
 				B302FF781D47B40A005074BB /* Assets.xcassets */,
 				B302FF7A1D47B40A005074BB /* LaunchScreen.storyboard */,
@@ -145,6 +152,57 @@
 				B302FF931D47B40B005074BB /* Info.plist */,
 			);
 			path = DGHTTPURLSessionUITests;
+			sourceTree = "<group>";
+		};
+		B302FFA01D47BC2B005074BB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				B302FFA11D47BC2B005074BB /* Controller */,
+				B302FFA21D47BC2B005074BB /* Model */,
+				B302FFA31D47BC2B005074BB /* View */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		B302FFA11D47BC2B005074BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B302FF721D47B40A005074BB /* ViewController.h */,
+				B302FF731D47B40A005074BB /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B302FFA21D47BC2B005074BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B302FFA31D47BC2B005074BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B302FFA41D47BC2B005074BB /* Gategories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gategories;
+			sourceTree = "<group>";
+		};
+		B302FFA51D47BD45005074BB /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				B302FFA61D47C3C8005074BB /* DGHTTPManager.h */,
+				B302FFA71D47C3C8005074BB /* DGHTTPManager.m */,
+				B302FFAB1D47D4F9005074BB /* APIManager.h */,
+				B302FFAC1D47D4F9005074BB /* APIManager.m */,
+			);
+			path = Net;
 			sourceTree = "<group>";
 		};
 		B386FD9B4692D1895892C619 /* Pods */ = {
@@ -348,9 +406,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B302FFA81D47C3C8005074BB /* DGHTTPManager.m in Sources */,
 				B302FF741D47B40A005074BB /* ViewController.m in Sources */,
 				B302FF711D47B40A005074BB /* AppDelegate.m in Sources */,
 				B302FF6E1D47B40A005074BB /* main.m in Sources */,
+				B302FFAD1D47D4F9005074BB /* APIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,3 +1,4 @@
 target 'DGHTTPURLSession' do
   pod 'AFNetworking'
+  pod 'SVProgressHUD'
 end
