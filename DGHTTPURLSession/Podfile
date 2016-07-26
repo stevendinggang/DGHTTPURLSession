@@ -1,0 +1,3 @@
+target 'DGHTTPURLSession' do
+  pod 'AFNetworking'
+end
